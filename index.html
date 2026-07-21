@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristemp | Vidrio Templado Industrial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800&family=Nunito+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Agrega esto en tu <head> para que funcionen los iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- ════ HEADER ════ -->
+  <header class="header">
+    <div class="header__inner">
+
+      <div class="header__logos">
+        <a href="index.html" class="header__logo-link">
+          <img src="images/llamosas.webp" alt="Logo Cristemp Principal" class="header__logo-img">
+        </a>
+        <a href="index.html" class="header__logo-link">
+          <img src="images/cristemp.webp" alt="Logo Cristemp Secundario" class="header__logo-img">
+        </a>
+      </div>
+
+      <nav>
+        <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="productos.html" class="nav__link">Productos</a></li>
+          <li><a href="obras.html" class="nav__link">Obras</a></li>
+          <li><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+        </ul>
+      </nav>
+      <div class="header__contact-group">
+        <!-- Botón principal o contenedor -->
+        <button class="nav__cta">Contacto ▼</button>
+
+        <!-- Lista desplegable oculta -->
+        <div class="nav__contact-dropdown">
+          <a href="https://wa.me/595983109933?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web."
+            target="_blank" rel="noopener">
+            Asunción: 0983 109933
+          </a>
+          <a href="https://wa.me/595982439620?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web."
+            target="_blank" rel="noopener">
+            Caaguazú: 0982 439620
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ════ HERO ════ -->
+  <section class="hero">
+
+    <div class="hero__track">
+      <div class="hero__slide">
+        <img class="hero__slide-img" src="images/cristemp_index.webp" loading="eager">
+        <div class="hero__slide-overlay"></div>
+      </div>
+      <div class="hero__slide">
+        <img class="hero__slide-img" src="images/cristemp_index2.webp" loading="lazy">
+        <div class="hero__slide-overlay"></div>
+      </div>
+      <div class="hero__slide">
+        <img class="hero__slide-img" src="images/cristemp_index3.webp" loading="lazy">
+        <div class="hero__slide-overlay"></div>
+      </div>
+    </div>
+
+    <!-- Card glassmorphism -->
+    <div class="hero__card">
+      <span class="hero__card-label">Caaguazú · Paraguay</span>
+      <h1 class="hero__card-title">Elegí tu vidrio<br>Cristemp</h1>
+      <p class="hero__card-desc">Fabricación y procesamiento de vidrio templado industrial de alta seguridad para
+        proyectos arquitectónicos, comerciales y residenciales.</p>
+      <div class="hero__card-actions">
+        <a href="productos.html" class="hero__card-btn">Ver más</a>
+        <div class="hero__arrows">
+          <button class="hero__arrow" id="heroPrev" aria-label="Anterior">&#8592;</button>
+          <button class="hero__arrow" id="heroNext" aria-label="Siguiente">&#8594;</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dots -->
+    <div class="hero__dots">
+      <button class="hero__dot" aria-label="Slide 1"></button>
+      <button class="hero__dot" aria-label="Slide 2"></button>
+      <button class="hero__dot" aria-label="Slide 3"></button>
+    </div>
+
+  </section>
+
+  <!-- ════ BARRA DE CATEGORÍAS ════ -->
+  <div class="cat-bar">
+    <a href="productos.html#vidrios" class="cat-bar__item">
+      <span>Vidrios</span>
+      <span class="cat-bar__arrow">&#8595;</span>
+    </a>
+    <a href="productos.html#herrajes" class="cat-bar__item">
+      <span>Herrajes</span>
+      <span class="cat-bar__arrow">&#8595;</span>
+    </a>
+    <a href="productos.html#aluminio" class="cat-bar__item">
+      <span>Perfil de Aluminio</span>
+      <span class="cat-bar__arrow">&#8595;</span>
+    </a>
+    <a href="productos.html" class="cat-bar__item">
+      <span>Todos los productos</span>
+      <span class="cat-bar__arrow">&#8594;</span>
+    </a>
+  </div>
+
+  <!-- ════ DESCUBRÍ ════ -->
+  <section class="discover">
+    <h2 class="discover__heading">Descubrí</h2>
+    <div class="discover__grid">
+
+      <a href="productos.html" class="disc-card">
+        <img class="disc-card__img"
+          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700&q=80&auto=format&fit=crop"
+          alt="Productos Cristemp" loading="lazy">
+        <div class="disc-card__overlay"></div>
+        <div class="disc-card__icon">↗</div>
+        <div class="disc-card__body">
+          <div class="disc-card__name">Productos</div>
+          <div class="disc-card__sub">Vidrios, herrajes y aluminio</div>
+        </div>
+      </a>
+
+      <a href="obras.html" class="disc-card">
+        <img class="disc-card__img"
+          src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=700&q=80&auto=format&fit=crop"
+          alt="Obras ejecutadas Cristemp" loading="lazy">
+        <div class="disc-card__overlay"></div>
+        <div class="disc-card__icon">↗</div>
+        <div class="disc-card__body">
+          <div class="disc-card__name">Nuestras obras</div>
+          <div class="disc-card__sub">Proyectos ejecutados</div>
+        </div>
+      </a>
+
+      <a href="nosotros.html" class="disc-card">
+        <img class="disc-card__img"
+          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80&auto=format&fit=crop"
+          alt="Quiénes somos Cristemp" loading="lazy">
+        <div class="disc-card__overlay"></div>
+        <div class="disc-card__icon">↗</div>
+        <div class="disc-card__body">
+          <div class="disc-card__name">Quiénes somos</div>
+          <div class="disc-card__sub">Misión, visión y valores</div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ════ QUIÉNES SOMOS ════ -->
+  <section class="about-strip">
+    <div class="about-strip__inner">
+
+      <div>
+        <p class="about-strip__label">Sobre Cristemp</p>
+        <h2 class="about-strip__title">Innovación<br>en vidrio templado</h2>
+        <p class="about-strip__text">Somos una empresa dedicada a la fabricación y procesamiento de vidrio templado
+          industrial de alta seguridad. Nos comprometemos con la innovación constante y el uso de tecnología de punta
+          para ofrecer soluciones integrales a proyectos arquitectónicos, comerciales y residenciales.</p>
+        <p class="about-strip__text">Nuestra prioridad es la máxima resistencia, precisión en los detalles y el
+          cumplimiento de los más altos estándares de calidad y seguridad del mercado, transformando espacios con la
+          transparencia y solidez que nuestros clientes necesitan.</p>
+        <a href="nosotros.html" class="about-strip__btn">Conocer más</a>
+      </div>
+
+      <div class="about-strip__values">
+        <div class="about-val">
+          <div class="about-val__title">Seguridad</div>
+          <div class="about-val__desc">En cada uno de nuestros procesos.</div>
+        </div>
+        <div class="about-val">
+          <div class="about-val__title">Responsabilidad</div>
+          <div class="about-val__desc">En el cumplimiento y los plazos de entrega.</div>
+        </div>
+        <div class="about-val">
+          <div class="about-val__title">Confianza</div>
+          <div class="about-val__desc">Respaldada por la calidad de nuestro vidrio.</div>
+        </div>
+        <div class="about-val">
+          <div class="about-val__title">Precisión</div>
+          <div class="about-val__desc">Detalles impecables con tecnología de punta.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════ OBRAS RECIENTES ════ -->
+  <section class="obras-home">
+    <div class="obras-home__header">
+      <div>
+        <p class="section-label">Portfolio</p>
+        <h2 class="section-title">Obras recientes</h2>
+      </div>
+      <a href="obras.html" class="btn btn--outline-dark">Ver todas</a>
+    </div>
+    <div class="obras-grid obras-grid--2">
+      <div class="obra-card obra-card--feat">
+        <span class="obra-card__index">01</span>
+        <img class="obra-card__img"
+          src="imagesObras/obras1.webp"
+          alt="Fachada residencial con vidrio templado Cristemp" loading="lazy">
+        <div class="obra-card__overlay"></div>
+        <div class="obra-card__body">
+          <div class="obra-card__title">Fachada Residencial</div>
+          <span class="obra-card__link">Ver proyecto <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </div>
+      <div class="obra-card obra-card--feat">
+        <span class="obra-card__index">02</span>
+        <img class="obra-card__img"
+          src="imagesObras/obras3.webp"
+          alt="Proyecto corporativo con vidrio templado Cristemp" loading="lazy">
+        <div class="obra-card__overlay"></div>
+        <div class="obra-card__body">
+          <div class="obra-card__title">Proyecto Corporativo</div>
+          <span class="obra-card__link">Ver proyecto <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ STATS ════ -->
+  <section class="stats">
+    <div class="stats__inner">
+      <div class="stats__grid">
+        <div class="stat-item">
+          <div class="stat-item__num">15<span>+</span></div>
+          <div class="stat-item__label">Años de experiencia</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__num">500<span>+</span></div>
+          <div class="stat-item__label">Proyectos ejecutados</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__num">100<span>%</span></div>
+          <div class="stat-item__label">Fabricación nacional</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__num">Alta<span> seg.</span></div>
+          <div class="stat-item__label">Estándares de calidad</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ FOOTER ════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <!-- LOGOS AGREGADOS Y TEXTO ANTERIOR ELIMINADO -->
+          <div class="footer__logos">
+            <a href="index.html" class="header__logo-link">
+              <img src="images/llamosas.webp" alt="Logo Cristemp Principal" class="header__logo-img">
+            </a>
+            <a href="index.html" class="header__logo-link">
+              <img src="images/cristemp.webp" alt="Logo Cristemp Secundario" class="header__logo-img">
+            </a>
+          </div>
+          <p class="footer__brand-desc">Fabricación y procesamiento de vidrio templado industrial de alta seguridad para
+            la arquitectura paraguaya.</p>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Productos</div>
+          <ul>
+            <li><a href="productos.html#vidrios">Vidrios Templados</a></li>
+            <li><a href="productos.html#vidrios">Vidrios Laminados</a></li>
+            <li><a href="productos.html#vidrios">Vidrios Reflectivos</a></li>
+            <li><a href="productos.html#herrajes">Herrajes</a></li>
+            <li><a href="productos.html#aluminio">Perfil de Aluminio</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Empresa</div>
+          <ul>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="nosotros.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Contacto</div>
+          <ul>
+            <li><strong>Ventas Asunción:</strong> <a
+                href="https://wa.me/595983109933?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web.%20Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios%20de%20vidrios%20templados"
+                target="_blank" rel="noopener">0983 109933</a></li>
+            <li><strong>Ventas Caaguazú:</strong> <a
+                href="https://wa.me/595982439620?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web.%20Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios%20de%20vidrios%20templados"
+                target="_blank" rel="noopener">0982 439620</a></li>
+          </ul>
+
+          <div class="footer__social">
+            <a href="https://www.facebook.com/share/1bWRRLYzb1/?mibextid=wwXlfr" target="_blank" rel="noopener"
+              class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/cristemp_py?igsh=cDNnd2t2dG1pcGU3" target="_blank" rel="noopener"
+              class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/cristemp/" target="_blank" rel="noopener" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div> <!-- CORREGIDO: Cierre correcto de footer__col -->
+      </div> <!-- cierra footer__top -->
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2026 Cristemp S.A. — Todos los derechos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/595983109933?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web.%20Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios%20de%20vidrios%20templados"
+    class="wa-float" target="_blank" rel="noopener">
+    Contacto WhatsApp
+    <span class="wa-float__icon">💬</span>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

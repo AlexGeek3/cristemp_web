@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristemp | Obras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800&family=Nunito+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- ════ HEADER ════ -->
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__logos">
+        <a href="index.html" class="header__logo-link">
+          <img src="images/llamosas.webp" alt="Logo Cristemp Principal" class="header__logo-img">
+        </a>
+        <a href="index.html" class="header__logo-link">
+          <img src="images/cristemp.webp" alt="Logo Cristemp Secundario" class="header__logo-img">
+        </a>
+      </div>
+
+      <nav>
+        <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="productos.html" class="nav__link">Productos</a></li>
+          <li><a href="obras.html" class="nav__link">Obras</a></li>
+          <li><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+        </ul>
+      </nav>
+      <div class="header__contact-group">
+        <button class="nav__cta">Contacto ▼</button>
+        <div class="nav__contact-dropdown">
+          <a href="https://wa.me/595983109933?text=Hola..." target="_blank" rel="noopener">Asunción: 0983 109933</a>
+          <a href="https://wa.me/595982439620?text=Hola..." target="_blank" rel="noopener">Caaguazú: 0982 439620</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ════ PAGE HERO ════ -->
+  <section class="page-hero">
+    <img class="page-hero__img" src="images2/obras.webp" alt="Proyectos arquitectónicos con cristales Cristemp"
+      loading="eager">
+    <div class="page-hero__content">
+      <p class="page-hero__label">Portfolio</p>
+      <h1 class="page-hero__title">Obras<br>Ejecutadas</h1>
+      <p class="page-hero__subtitle">Proyectos realizados con vidrio Cristemp e instalados por nuestros clientes en todo el país.</p>
+    </div>
+  </section>
+
+  <!-- ════ GALERÍA DE OBRAS (PREMIUM CON EFECTOS) ════ -->
+  <section class="obras-section">
+    <div class="obras-section__header">
+      <p class="section-label">Portfolio</p>
+      <h2 class="section-title">Nuestros proyectos</h2>
+    </div>
+
+    <div class="gallery">
+      <!-- Obra 1 -->
+      <div class="gallery__item" data-index="0">
+        <img src="imagesObras/obras1.webp" alt="Obra Cristemp 1" loading="lazy">
+        <div class="gallery__item-info">
+          <h3>Fachada Residencial</h3>
+        </div>
+      </div>
+      <!-- Obra 2 -->
+      <div class="gallery__item" data-index="1">
+        <img src="imagesObras/obras2.webp" alt="Obra Cristemp 2" loading="lazy">
+        <div class="gallery__item-info">
+          <h3>Integración Exterior</h3>
+        </div>
+      </div>
+      <!-- Obra 3 -->
+      <div class="gallery__item" data-index="2">
+        <img src="imagesObras/obras3.webp" alt="Obra Cristemp 3" loading="lazy">
+        <div class="gallery__item-info">
+          <h3>Proyecto Corporativo</h3>
+        </div>
+      </div>
+      <!-- Obra 4 -->
+      <div class="gallery__item" data-index="3">
+        <img src="imagesObras/obras4.webp" alt="Obra Cristemp 4" loading="lazy">
+        <div class="gallery__item-info">
+          <h3>Diseño Minimalista</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ LIGHTBOX ════ -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox__img-wrap">
+      <button class="lightbox__close" id="lbClose" aria-label="Cerrar">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img class="lightbox__img" id="lbImg" src="" alt="Obra Cristemp">
+      <p class="lightbox__counter" id="lbCounter"></p>
+      <button class="lightbox__btn lightbox__btn--prev" id="lbPrev" aria-label="Anterior">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="lightbox__btn lightbox__btn--next" id="lbNext" aria-label="Siguiente">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ════ CTA FINAL ════ -->
+  <section class="nosotros-cta">
+    <div class="container">
+      <h2 class="nosotros-cta__title">¿Tu proyecto podría<br>ser la próxima <span>obra destacada?</span></h2>
+      <a href="https://wa.me/595983109933?text=Hola..." class="nosotros-cta__btn" target="_blank"
+        rel="noopener">Contactar ahora</a>
+    </div>
+  </section>
+
+  <!-- ════ FOOTER ════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logos">
+            <img src="images/llamosas.webp" alt="Logo Principal" class="header__logo-img">
+            <img src="images/cristemp.webp" alt="Logo Secundario" class="header__logo-img">
+          </div>
+          <p class="footer__brand-desc">Fabricación y procesamiento de vidrio templado industrial de alta seguridad para
+            la arquitectura paraguaya.</p>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Productos</div>
+          <ul>
+            <li><a href="productos.html#vidrios">Vidrios Templados</a></li>
+            <li><a href="productos.html#herrajes">Herrajes</a></li>
+            <li><a href="productos.html#aluminio">Perfil de Aluminio</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Empresa</div>
+          <ul>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="obras.html">Obras</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Contacto</div>
+          <ul>
+            <li><strong>Asunción:</strong> <a href="https://wa.me/595983109933" target="_blank" rel="noopener">0983
+                109933</a></li>
+            <li><strong>Caaguazú:</strong> <a href="https://wa.me/595982439620" target="_blank" rel="noopener">0982
+                439620</a></li>
+          </ul>
+          <div class="footer__social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2026 Cristemp S.A. — Todos los derechos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════ WHATSAPP FLOTANTE ════ -->
+  <a class="wa-float"
+    href="https://wa.me/595983109933?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web."
+    target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <span>💬</span>
+    <span>Chat con nosotros</span>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
