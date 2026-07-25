@@ -60,22 +60,15 @@
   </header>
 
   <!-- ════ HERO ════ -->
-  <section class="hero">
+  <section class="hero hero--static">
 
-    <div class="hero__track">
-      <div class="hero__slide">
-        <img class="hero__slide-img" src="images/cristemp_index.webp" loading="eager">
-        <div class="hero__slide-overlay"></div>
-      </div>
-      <div class="hero__slide">
-        <img class="hero__slide-img" src="images/cristemp_index2.webp" loading="lazy">
-        <div class="hero__slide-overlay"></div>
-      </div>
-      <div class="hero__slide">
-        <img class="hero__slide-img" src="images/cristemp_index3.webp" loading="lazy">
-        <div class="hero__slide-overlay"></div>
-      </div>
-    </div>
+    <picture class="hero__picture">
+      <!-- Mobile: imagen vertical -->
+      <source media="(max-width: 768px)" srcset="images/cristemp_index_mobile.webp">
+      <!-- Desktop: imagen horizontal -->
+      <img class="hero__slide-img" src="images/cristemp_index.webp" alt="Cristemp — Vidrio templado industrial" loading="eager">
+    </picture>
+    <div class="hero__slide-overlay"></div>
 
     <!-- Card glassmorphism -->
     <div class="hero__card">
@@ -85,18 +78,7 @@
         proyectos arquitectónicos, comerciales y residenciales.</p>
       <div class="hero__card-actions">
         <a href="productos.html" class="hero__card-btn">Ver más</a>
-        <div class="hero__arrows">
-          <button class="hero__arrow" id="heroPrev" aria-label="Anterior">&#8592;</button>
-          <button class="hero__arrow" id="heroNext" aria-label="Siguiente">&#8594;</button>
-        </div>
       </div>
-    </div>
-
-    <!-- Dots -->
-    <div class="hero__dots">
-      <button class="hero__dot" aria-label="Slide 1"></button>
-      <button class="hero__dot" aria-label="Slide 2"></button>
-      <button class="hero__dot" aria-label="Slide 3"></button>
     </div>
 
   </section>

@@ -33,35 +33,8 @@
   document.addEventListener('click', () => group.classList.remove('is-open'));
 })();
 
-/* ── HERO ── */
-
-(function () {
-  const slides = document.querySelectorAll('.hero__slide');
-
-  if (!slides.length) return;
-
-  const dots    = document.querySelectorAll('.hero__dot');
-  const btnPrev = document.getElementById('heroPrev');
-  const btnNext = document.getElementById('heroNext');
-  let current = 0, timer;
-
-  function goTo(i) {
-    slides[current].classList.remove('is-active');
-    dots[current]?.classList.remove('is-active');
-    current = (i + slides.length) % slides.length;
-    slides[current].classList.add('is-active');
-    dots[current]?.classList.add('is-active');
-  }
-
-  function restart() { clearInterval(timer); timer = setInterval(() => goTo(current + 1), 5500); }
-
-  dots.forEach((d, i) => d.addEventListener('click', () => { goTo(i); restart(); }));
-  btnPrev?.addEventListener('click', () => { goTo(current - 1); restart(); });
-  btnNext?.addEventListener('click', () => { goTo(current + 1); restart(); });
-
-  goTo(0);
-  restart();
-})();
+/* ── HERO: ya no es carrusel, imagen fija con <picture> ── */
+/* (lógica de slides eliminada — no aplica más) */
 
 /* ── REVEAL DE FEATURES AL SCROLL (productos.html) ── */
 (function () {
