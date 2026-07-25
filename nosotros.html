@@ -11,9 +11,10 @@
     href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800&family=Nunito+Sans:wght@300;400;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-
+  <!-- En el <head>, debajo de tus estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Agrega esta línea para cargar los iconos: -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="icon" type="image/webp" href="images/cristempHead.webp">
 </head>
 
 <body>
@@ -46,9 +47,9 @@
 
         <!-- Lista desplegable oculta -->
         <div class="nav__contact-dropdown">
-          <a href="https://wa.me/595983109933?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web."
+          <a href="https://wa.me/595983434004?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web."
             target="_blank" rel="noopener">
-            Asunción: 0983 109933
+            Asunción: 0983 434004
           </a>
           <a href="https://wa.me/595982439620?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web."
             target="_blank" rel="noopener">
@@ -63,7 +64,8 @@
   <!-- ════ PAGE HERO ════ -->
   <section class="page-hero">
     <img class="page-hero__img"
-src="images2/nosotros.jpeg">
+      src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1800&auto=format&fit=crop&q=80"
+      alt="Instalación de vidrio templado" loading="eager">
     <div class="page-hero__content">
       <p class="page-hero__label">Empresa paraguaya</p>
       <h1 class="page-hero__title">Quiénes<br>somos</h1>
@@ -84,10 +86,14 @@ src="images2/nosotros.jpeg">
             estándares de calidad y seguridad del mercado, transformando espacios con la transparencia y solidez que
             nuestros clientes necesitan.</p>
           <br>
-          <p><strong class="intro-label">Misión —</strong> Proveer soluciones en vidrio templado que combinen seguridad, estética y durabilidad,
+          <p><strong
+              style="font-family:var(--f-display);font-size:0.85rem;letter-spacing:1px;text-transform:uppercase;color:var(--text-dark);">Misión
+              —</strong> Proveer soluciones en vidrio templado que combinen seguridad, estética y durabilidad,
             impulsando el desarrollo de proyectos arquitectónicos e industriales eficientes.</p>
           <br>
-          <p><strong class="intro-label">Visión —</strong> Ser el referente principal en la industria del vidrio templado a nivel nacional, reconocidos
+          <p><strong
+              style="font-family:var(--f-display);font-size:0.85rem;letter-spacing:1px;text-transform:uppercase;color:var(--text-dark);">Visión
+              —</strong> Ser el referente principal en la industria del vidrio templado a nivel nacional, reconocidos
             por nuestra innovación tecnológica y la excelencia en el servicio.</p>
         </div>
         <div class="nosotros-intro__img-wrap">
@@ -109,12 +115,12 @@ src="images2/nosotros.jpeg">
       </div>
       <div class="video-section__player">
         <video
-          src="videos/produccion.MP4"
           controls
           preload="metadata"
           playsinline
-          poster=""
           aria-label="Video de la línea de producción de Cristemp">
+          <source src="videos/produccion.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de este video.
         </video>
       </div>
     </div>
@@ -281,7 +287,7 @@ src="images2/nosotros.jpeg">
             <div class="loc-card__photo">
               <img src="images2/ita1.webp" alt="Construcción nueva planta Cristemp Itá" loading="lazy">
             </div>
-            <div class="loc-card__photo">
+            <div class="loc-card__photo" style="position:relative;">
               <img src="images2/ita2.webp" alt="Obra en progreso planta industrial Itá" loading="lazy">
               <div class="loc-card__wip-badge">En obras</div>
             </div>
@@ -426,8 +432,8 @@ src="images2/nosotros.jpeg">
           <div class="footer__col-title">Contacto</div>
           <ul>
             <li><strong>Ventas Asunción:</strong> <a
-                href="https://wa.me/595983109933?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web.%20Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios%20de%20vidrios%20templados"
-                target="_blank" rel="noopener">0983 109933</a></li>
+                href="https://wa.me/595983434004?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web.%20Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios%20de%20vidrios%20templados"
+                target="_blank" rel="noopener">0983 434004</a></li>
             <li><strong>Ventas Caaguazú:</strong> <a
                 href="https://wa.me/595982439620?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web.%20Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios%20de%20vidrios%20templados"
                 target="_blank" rel="noopener">0982 439620</a></li>
@@ -454,15 +460,28 @@ src="images2/nosotros.jpeg">
     </div>
   </footer>
 
+  <a href="https://wa.me/595983434004?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web.%20Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios%20de%20vidrios%20templados"
+    class="wa-float" target="_blank" rel="noopener">
+    Contacto WhatsApp
+    <span class="wa-float__icon">💬</span>
+  </a>
+
+  <a href="https://wa.me/595983434004?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web.%20Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios%20de%20vidrios%20templados"
+    class="wa-float" target="_blank" rel="noopener">
+    Contacto WhatsApp
+    <span class="wa-float__icon">💬</span>
+  </a>
+
   <!-- WhatsApp flotante -->
   <a class="wa-float"
     href="https://wa.me/595983109933?text=Hola%2C%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web.%20Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios%20de%20vidrios%20templados"
-    target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-    <span>💬</span>
-    <span>Contacto WhatsApp</span>
+    target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"
+    style="position:fixed;bottom:28px;right:28px;z-index:999;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;text-decoration:none;padding:12px 20px 12px 16px;border-radius:50px;font-family:var(--f-display);font-size:0.78rem;font-weight:700;box-shadow:0 6px 24px rgba(37,211,102,0.40);transition:all 0.3s ease;">
+    <span style="font-size:1.2rem;">💬</span>
+    <span>Chat con nosotros</span>
   </a>
 
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
