@@ -303,11 +303,10 @@ a {
   background-repeat: no-repeat;
 }
 
-/* Desktop: visible por defecto, encuadre desplazado a la derecha
-   para que el logo no quede tapado por la card */
+/* Desktop: fachada de vidrio de alto impacto */
 .hero__picture--desktop {
   display: block;
-  background-position: 75% center;
+  background-position: center 40%;
 }
 
 /* Mobile: oculto por defecto, se activa en la media query de abajo */
@@ -654,18 +653,19 @@ a {
   overflow: hidden;
 }
 
-.about-strip::before {
-  content: 'CRISTEMP';
+.about-strip__bg {
   position: absolute;
-  font-family: var(--f-display);
-  font-size: clamp(8rem, 18vw, 18rem);
-  font-weight: 800;
-  color: rgba(255, 255, 255, 0.03);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-  pointer-events: none;
+  inset: 0;
+  background-image: url('images/cristemp_index.webp');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+}
+
+.about-strip__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, rgba(11,25,44,0.92) 0%, rgba(11,25,44,0.75) 55%, rgba(11,25,44,0.55) 100%);
 }
 
 .about-strip__inner {
@@ -1319,22 +1319,25 @@ a {
   z-index: 999;
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
   background: #25D366;
   color: var(--white);
   text-decoration: none;
-  padding: 13px 20px 13px 16px;
-  border-radius: 50px;
-  font-family: var(--f-display);
-  font-size: 0.8rem;
-  font-weight: 700;
+  border-radius: 50%;
+  font-size: 1.5rem;
   box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
   transition: all 0.3s ease;
 }
 
+.wa-float span:not(.wa-float__icon) {
+  display: none;
+}
+
 .wa-float:hover {
   background: #1ebe5a;
-  transform: translateY(-3px);
+  transform: translateY(-3px) scale(1.05);
   box-shadow: 0 10px 32px rgba(37, 211, 102, 0.55);
 }
 
@@ -1424,7 +1427,7 @@ a {
 
   /* ── HERO MOBILE: obra real fullscreen, texto flotando abajo sin card ── */
   .hero--static {
-    height: 55vh;
+    height: 92vh;
     min-height: 560px;
     max-height: 780px;
     overflow: hidden;
