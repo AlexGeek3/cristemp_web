@@ -62,15 +62,11 @@
   <!-- ════ HERO ════ -->
   <section class="hero hero--static">
 
-    <picture class="hero__picture">
-      <!-- Mobile: imagen vertical -->
-      <source media="(max-width: 768px)" srcset="images/cristemp_index_mobile.webp">
-      <!-- Desktop: imagen horizontal -->
-      <img class="hero__slide-img" src="images/cristemp_index.webp" alt="Cristemp — Vidrio templado industrial" loading="eager">
-    </picture>
+    <div class="hero__picture hero__picture--desktop" style="background-image:url('images/cristemp_index.webp');"></div>
+    <div class="hero__picture hero__picture--mobile" style="background-image:url('imagesObras/obras5.webp');"></div>
     <div class="hero__slide-overlay"></div>
 
-    <!-- Card glassmorphism -->
+    <!-- Card glassmorphism (solo desktop) -->
     <div class="hero__card">
       <span class="hero__card-label">Caaguazú · Paraguay</span>
       <h1 class="hero__card-title">Elegí tu vidrio<br>Cristemp</h1>
@@ -79,6 +75,13 @@
       <div class="hero__card-actions">
         <a href="productos.html" class="hero__card-btn">Ver más</a>
       </div>
+    </div>
+
+    <!-- Contenido mobile: texto directo sobre la imagen, sin card -->
+    <div class="hero__mobile-content">
+      <span class="hero__mobile-label">Caaguazú · Paraguay</span>
+      <h1 class="hero__mobile-title">Elegí tu vidrio<br>Cristemp</h1>
+      <a href="productos.html" class="hero__mobile-btn">Ver más</a>
     </div>
 
   </section>
@@ -127,8 +130,8 @@
         <div class="disc-card__overlay"></div>
         <div class="disc-card__icon">↗</div>
         <div class="disc-card__body">
-          <div class="disc-card__name">Nuestras obras</div>
-          <div class="disc-card__sub">Proyectos ejecutados</div>
+          <div class="disc-card__name">Obras</div>
+          <div class="disc-card__sub">Proyectos ejecutados por nuestros clientes</div>
         </div>
       </a>
 
