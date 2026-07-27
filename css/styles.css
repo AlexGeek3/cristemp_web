@@ -1427,7 +1427,7 @@ a {
 
   /* ── HERO MOBILE: obra real fullscreen, texto flotando abajo sin card ── */
   .hero--static {
-    height: 92vh;
+    height: 57vh;
     min-height: 560px;
     max-height: 780px;
     overflow: hidden;
@@ -2825,3 +2825,4 @@ a {
       padding: 0 20px;
     }
   }
+}
