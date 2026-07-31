@@ -1268,6 +1268,25 @@ a {
   font-size: 0.78rem;
 }
 
+.footer__contact-list {
+  gap: 16px;
+}
+
+.footer__contact-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer__contact-label {
+  font-family: var(--f-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 2px;
+}
+
 .footer__bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   padding-top: 28px;
@@ -2826,14 +2845,3 @@ a {
       padding: 0 20px;
     }
   }
-/* ═══════════════════════════════════════════
-   SÍMBOLO DE MARCA REGISTRADA (®)
-═══════════════════════════════════════════ */
-sup {
-  font-size: 0.4em;
-  vertical-align: super;
-  line-height: 0;
-  margin-left: 2px;
-  font-weight: 400;
-  opacity: 0.85;
-}
