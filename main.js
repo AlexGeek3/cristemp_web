@@ -154,3 +154,45 @@
     if (e.key === 'ArrowRight') next();
   });
 })();
+
+/* ── FORMULARIO DE CONTACTO (nosotros.html) — envío vía Formspree ── */
+(function () {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  const btn = document.getElementById('contactFormBtn');
+  const msg = document.getElementById('contactFormMsg');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const originalBtnText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+    msg.style.display = 'none';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        msg.textContent = '¡Gracias! Tu consulta fue enviada correctamente. Te contactaremos pronto.';
+        msg.style.color = '#1a9c4a';
+        msg.style.display = 'block';
+        form.reset();
+      } else {
+        throw new Error('Error en el envío');
+      }
+    } catch (err) {
+      msg.textContent = 'Hubo un problema al enviar tu consulta. Por favor, escribinos directamente por WhatsApp.';
+      msg.style.color = '#cc1b1b';
+      msg.style.display = 'block';
+    } finally {
+      btn.disabled = false;
+      btn.textContent = originalBtnText;
+    }
+  });
+})();

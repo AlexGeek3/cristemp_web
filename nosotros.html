@@ -4,7 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cristemp | Nosotros</title>
+  <title>Nosotros | Misión, Visión y Valores — Cristemp Paraguay</title>
+
+  <!-- ═══ SEO BÁSICO ═══ -->
+  <meta name="description" content="Conocé a Cristemp: 15+ años de experiencia en vidrio templado industrial. Nuestra misión, visión, valores y ubicaciones en Caaguazú y Asunción, Paraguay.">
+  <meta name="keywords" content="Cristemp empresa, misión visión valores vidrio, fábrica vidrio templado Caaguazú, contacto Cristemp">
+  <meta name="author" content="Cristemp S.A.">
+  <link rel="canonical" href="https://cristemp.com.py/nosotros.html">
+
+  <!-- ═══ OPEN GRAPH ═══ -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cristemp">
+  <meta property="og:title" content="Nosotros | Misión, Visión y Valores — Cristemp Paraguay">
+  <meta property="og:description" content="15+ años de experiencia en fabricación y procesamiento de vidrio templado industrial de alta seguridad en Paraguay.">
+  <meta property="og:image" content="https://cristemp.com.py/images/quienesSomosIndex.jpeg">
+  <meta property="og:url" content="https://cristemp.com.py/nosotros.html">
+  <meta property="og:locale" content="es_PY">
+
+  <!-- ═══ TWITTER CARD ═══ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nosotros | Misión, Visión y Valores — Cristemp Paraguay">
+  <meta name="twitter:description" content="15+ años de experiencia en fabricación y procesamiento de vidrio templado industrial de alta seguridad en Paraguay.">
+  <meta name="twitter:image" content="https://cristemp.com.py/images/quienesSomosIndex.jpeg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -15,6 +37,7 @@
 
   <link rel="icon" type="image/webp" href="images/logoOriginal.webp">
 </head>
+
 
 <body>
 
@@ -347,24 +370,24 @@ src="images2/nosotros1.webp"            alt="Instalación de vidrio templado en 
           </div>
         </div>
 
-        <form class="contact-form" onsubmit="return false;">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
           <div class="form-row">
             <div class="form-field">
               <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" placeholder="Tu nombre">
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
             </div>
             <div class="form-field">
               <label for="empresa">Empresa</label>
-              <input type="text" id="empresa" placeholder="Opcional">
+              <input type="text" id="empresa" name="empresa" placeholder="Opcional">
             </div>
           </div>
           <div class="form-field">
             <label for="email">Correo electrónico</label>
-            <input type="email" id="email" placeholder="correo@empresa.com">
+            <input type="email" id="email" name="email" placeholder="correo@empresa.com" required>
           </div>
           <div class="form-field">
             <label for="sucursal">Sucursal de interés</label>
-            <select id="sucursal">
+            <select id="sucursal" name="sucursal">
               <option value="" disabled selected>Seleccioná una sucursal</option>
               <option>Asunción (Sucursal comercial)</option>
               <option>Caaguazú (Planta principal)</option>
@@ -373,7 +396,7 @@ src="images2/nosotros1.webp"            alt="Instalación de vidrio templado en 
           </div>
           <div class="form-field">
             <label for="tipo">Tipo de proyecto</label>
-            <select id="tipo">
+            <select id="tipo" name="tipo_proyecto">
               <option value="" disabled selected>Seleccioná una opción</option>
               <option>Edificio corporativo</option>
               <option>Residencia privada</option>
@@ -384,13 +407,14 @@ src="images2/nosotros1.webp"            alt="Instalación de vidrio templado en 
           </div>
           <div class="form-field">
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" placeholder="Contanos sobre tu proyecto..."></textarea>
+            <textarea id="mensaje" name="mensaje" placeholder="Contanos sobre tu proyecto..." required></textarea>
           </div>
           <div>
-            <button type="submit" class="btn btn--primary" style="width:100%;padding:15px;font-size:0.8rem;">
+            <button type="submit" id="contactFormBtn" class="btn btn--primary" style="width:100%;padding:15px;font-size:0.8rem;">
               Enviar consulta
             </button>
           </div>
+          <p id="contactFormMsg" style="display:none;margin-top:12px;font-size:0.85rem;text-align:center;"></p>
         </form>
 
       </div>
@@ -424,14 +448,11 @@ src="images2/nosotros1.webp"            alt="Instalación de vidrio templado en 
         <div class="footer__col">
           <div class="footer__col-title">Productos</div>
           <ul>
-            <li><a href="productos.html#templado">Templado</a></li>
-            <li><a href="productos.html#reflectivo">Templado Reflectivo</a></li>
-            <li><a href="productos.html#box">Templado Box</a></li>
-            <li><a href="productos.html#decorativo">Templado Decorativo</a></li>
-            <li><a href="productos.html#solar">Templado Solar</a></li>
+            <li><a href="productos.html#vidrios">Vidrios Templados</a></li>
+            <li><a href="productos.html#vidrios">Vidrios Laminados</a></li>
+            <li><a href="productos.html#vidrios">Vidrios Reflectivos</a></li>
+            <li><a href="productos.html#herrajes">Herrajes</a></li>
             <li><a href="productos.html#aluminio">Perfil de Aluminio</a></li>
-            <li><a href="productos.html#ripado">Perfil Ripado</a></li>
-            <li><a href="productos.html#accesorios">Accesorios</a></li>
           </ul>
         </div>
         <div class="footer__col">
@@ -443,27 +464,14 @@ src="images2/nosotros1.webp"            alt="Instalación de vidrio templado en 
           </ul>
         </div>
         <div class="footer__col">
-                    <div class="footer__col-title">Contacto</div>
-          <ul class="footer__contact-list">
-            <li class="footer__contact-group">
-              <span class="footer__contact-label">Planta Industrial Caaguazú</span>
-              <a href="https://wa.me/595981307028?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web.%20Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios%20de%20vidrios%20templados"
-                target="_blank" rel="noopener">0981 307 028</a>
-            </li>
-            <li class="footer__contact-group">
-              <span class="footer__contact-label">Sucursal Asunción</span>
-              <a href="https://wa.me/595983238500?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web.%20Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios%20de%20vidrios%20templados"
-                target="_blank" rel="noopener">0983 238 500</a>
-              <a href="https://wa.me/595981292245?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web.%20Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios%20de%20vidrios%20templados"
-                target="_blank" rel="noopener">0981 292 245</a>
-            </li>
-            <li class="footer__contact-group">
-              <span class="footer__contact-label">Interior del País</span>
-              <a href="https://wa.me/595982439620?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web.%20Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios%20de%20vidrios%20templados"
-                target="_blank" rel="noopener">0982 439 620</a>
-              <a href="https://wa.me/595981303619?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web.%20Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios%20de%20vidrios%20templados"
-                target="_blank" rel="noopener">0981 303 619</a>
-            </li>
+          <div class="footer__col-title">Contacto</div>
+          <ul>
+            <li><strong>Ventas Asunción:</strong> <a
+                href="https://wa.me/595983434004?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web.%20Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios%20de%20vidrios%20templados"
+                target="_blank" rel="noopener">0983 434004</a></li>
+            <li><strong>Ventas Caaguazú:</strong> <a
+                href="https://wa.me/595982439620?text=Hola,%20me%20pongo%20en%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web.%20Quisiera%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios%20de%20vidrios%20templados"
+                target="_blank" rel="noopener">0982 439620</a></li>
           </ul>
 
           <div class="footer__social">
