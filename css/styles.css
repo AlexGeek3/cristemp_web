@@ -656,7 +656,7 @@ a {
 .about-strip__bg {
   position: absolute;
   inset: 0;
-  background-image: url('images/cristemp_index.webp');
+  background-image: url('/images/cristemp_index.webp');
   background-size: cover;
   background-position: center;
   opacity: 0.55;
@@ -1599,7 +1599,7 @@ a {
   }
 
   .about-strip__bg {
-    background-image: url('images/cristemp_index_mobile.webp');
+    background-image: url('/images/cristemp_index_mobile.webp');
   }
 
   @media (max-width: 480px) {
