@@ -1521,10 +1521,9 @@ a {
 
   .hero__mobile-logo {
     display: inline-block;
-    height: 48px;
+    height: 30px;
     width: auto;
     margin-top: 6px;
-    filter: brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
   }
 
   .hero__mobile-btn {
