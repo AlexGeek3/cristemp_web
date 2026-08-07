@@ -1414,6 +1414,11 @@ a {
     padding-top: 70px;
   }
 
+
+  .header__logo-img {
+    max-height: 40px;
+  }
+
   .header__inner {
     height: 70px;
     padding: 0 20px;
