@@ -120,7 +120,7 @@ a {
 }
 
 .header__logo-img {
-  max-height: 55px;
+  max-height: 45px;
   width: auto;
   display: block;
 }
@@ -388,7 +388,13 @@ a {
   color: var(--white);
   margin-bottom: 16px;
 }
-
+.hero__card-logo {
+  display: inline-block;
+  margin-top: 6px !important;
+  height: 60px !important;
+  width: auto !important;
+  filter: brightness(0) invert(1);
+}
 .hero__card-desc {
   font-size: 0.9rem;
   font-weight: 300;
@@ -1511,6 +1517,14 @@ a {
     color: var(--white);
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
     margin-bottom: 20px;
+  }
+
+  .hero__mobile-logo {
+    display: inline-block;
+    height: 48px;
+    width: auto;
+    margin-top: 6px;
+    filter: brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
   }
 
   .hero__mobile-btn {
