@@ -391,7 +391,7 @@ a {
 .hero__card-logo {
   display: inline-block;
   margin-top: 6px !important;
-  height: 60px !important;
+  height: 50px !important;
   width: auto !important;
   filter: brightness(0) invert(1);
 }
